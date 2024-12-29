@@ -7,7 +7,7 @@ Since `tick` timeframe represents a raw price change, the output will NOT contai
 ### Example: [with-tick-data.js](https://github.com/Leo4815162342/dukascopy-node/blob/master/examples/with-tick-data/with-tick-data.js)
 
 ```javascript
-const { getHistoricalRates } = require('dukascopy-node');
+const { getHistoricalRates } = require('dukascopy-node-jason');
 
 (async () => {
   try {

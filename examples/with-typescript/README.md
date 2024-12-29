@@ -4,7 +4,7 @@
 
 ```typescript
 
-import { getHistoricalRates, Config, Instrument, Timeframe, Format } from 'dukascopy-node';
+import { getHistoricalRates, Config, Instrument, Timeframe, Format } from 'dukascopy-node-jason';
 
 const config: Config = {
   instrument: Instrument.eurusd,
@@ -31,7 +31,7 @@ When `json` is requested as format for non-tick timeframe
 
 ```typescript
 
-import { getHistoricalRates, Config, Instrument, Timeframe, Format } from 'dukascopy-node';
+import { getHistoricalRates, Config, Instrument, Timeframe, Format } from 'dukascopy-node-jason';
 
 const config: Config = {
   instrument: Instrument.eurusd,
@@ -57,7 +57,7 @@ When `array` is requested as format for non-tick timeframe
 
 ```typescript
 
-import { getHistoricalRates, Config, Instrument, Timeframe, Format } from 'dukascopy-node';
+import { getHistoricalRates, Config, Instrument, Timeframe, Format } from 'dukascopy-node-jason';
 
 const config: Config = {
   instrument: Instrument.eurusd,
@@ -83,7 +83,7 @@ When `json` is requested as format for tick timeframe
 
 ```typescript
 
-import { getHistoricalRates, Config, Instrument, Timeframe, Format } from 'dukascopy-node';
+import { getHistoricalRates, Config, Instrument, Timeframe, Format } from 'dukascopy-node-jason';
 
 const config: Config = {
   instrument: Instrument.eurusd,
@@ -109,7 +109,7 @@ When `array` is requested as format for tick timeframe
 
 ```typescript
 
-import { getHistoricalRates, Config, Instrument, Timeframe, Format } from 'dukascopy-node';
+import { getHistoricalRates, Config, Instrument, Timeframe, Format } from 'dukascopy-node-jason';
 
 const config: Config = {
   instrument: Instrument.eurusd,
@@ -135,7 +135,7 @@ When `csv` is requested as format
 
 ```typescript
 
-import { getHistoricalRates, Config, Instrument, Timeframe, Format } from 'dukascopy-node';
+import { getHistoricalRates, Config, Instrument, Timeframe, Format } from 'dukascopy-node-jason';
 
 const config: Config = {
   instrument: Instrument.eurusd,

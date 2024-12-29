@@ -17,7 +17,7 @@ npx dukascopy-node -i eurusd -from 2021-02-01 -to 2021-03-01 -t m1 -f json --cac
 or via Node.js:
 
 ```javascript
-const { getHistoricalRates } = require("dukascopy-node");
+const { getHistoricalRates } = require("dukascopy-node-jason");
 
 (async () => {
   try {

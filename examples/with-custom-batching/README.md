@@ -7,7 +7,7 @@ In some cases such list of URLs can be huge. Since we do not want to overwhelm D
 For example - fetching historical price data for `eurusd` for the whole month of June in 2019, with minutely aggregation (`m1` timeframe):
 
 ```javascript
-const { getHistoricalRates } = require('dukascopy-node');
+const { getHistoricalRates } = require('dukascopy-node-jason');
 
 (async () => {
   try {
@@ -86,7 +86,7 @@ If you want to change those values, to let's say `batchSize: 15` and `pauseBetwe
 ### Example: [with-custom-batching.js](https://github.com/Leo4815162342/dukascopy-node/blob/master/examples/with-custom-batching/with-custom-batching.js)
 
 ```javascript
-const { getHistoricalRates } = require('dukascopy-node');
+const { getHistoricalRates } = require('dukascopy-node-jason');
 
 (async () => {
   try {

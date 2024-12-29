@@ -24,7 +24,7 @@ import { version } from '../package.json';
 import debug from 'debug';
 import os from 'os';
 
-const DEBUG_NAMESPACE = 'dukascopy-node';
+const DEBUG_NAMESPACE = 'dukascopy-node-jason';
 
 export async function getHistoricalRates(config: ConfigArrayItem): Promise<ArrayItem[]>;
 export async function getHistoricalRates(config: ConfigArrayTickItem): Promise<ArrayTickItem[]>;
@@ -33,7 +33,8 @@ export async function getHistoricalRates(config: ConfigJsonTickItem): Promise<Js
 export async function getHistoricalRates(config: ConfigCsvItem): Promise<string>;
 export async function getHistoricalRates(config: Config): Promise<Output>;
 
-export async function getHistoricalRates(config: Config): Promise<Output> {
+export async function getHistoricalRates(config: Config, proxyObj = {}): Promise<Output> {
+  debug(`${DEBUG_NAMESPACE}:proxyObj`)(proxyObj);
   debug(`${DEBUG_NAMESPACE}:version`)(version);
   debug(`${DEBUG_NAMESPACE}:nodejs`)(process.version);
   debug(`${DEBUG_NAMESPACE}:os`)(`${os.type()}, ${os.release()} (${os.platform()})`);
@@ -90,12 +91,12 @@ export async function getHistoricalRates(config: Config): Promise<Output> {
 
   const onItemFetch: BufferFetcherInput['onItemFetch'] = process.env.DEBUG
     ? (url, buffer, isCacheHit) => {
-        debug(`${DEBUG_NAMESPACE}:fetcher`)(
-          url,
-          `| ${formatBytes(buffer.length)} |`,
-          `${isCacheHit ? 'cache' : 'network'}`
-        );
-      }
+      debug(`${DEBUG_NAMESPACE}:fetcher`)(
+        url,
+        `| ${formatBytes(buffer.length)} |`,
+        `${isCacheHit ? 'cache' : 'network'}`
+      );
+    }
     : undefined;
 
   const bufferFetcher = new BufferFetcher({

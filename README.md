@@ -1,6 +1,6 @@
 <h1>dukascopy-node</h1>
 
-<p align="center"><img width="150" src="https://github.com/Leo4815162342/dukascopy-node/blob/master/dukascopy-node.png?raw=true" alt="dukascopy-node"></p>
+<p align="center"><img width="150" src="https://github.com/Leo4815162342/dukascopy-node/blob/master/dukascopy-node.png?raw=true" alt="dukascopy-node-jason"></p>
 
 <p align="center">
     <b>✨ Download free historical market price tick data ✨</b> <br>Stocks • Crypto • Commodities • Bonds • Currencies • CFDs • ETFs  <br> via Node.js and CLI
@@ -53,7 +53,7 @@ npx dukascopy-node -i btcusd -from 2019-01-13 -to 2019-01-14 -t tick -f csv
 ## ✨ Usage via Node.js ([try it live](https://runkit.com/embed/of4ho2xv8rvv))
 
 ```javascript
-const { getHistoricalRates } = require('dukascopy-node');
+const { getHistoricalRates } = require('dukascopy-node-jason');
 
 (async () => {
   try {

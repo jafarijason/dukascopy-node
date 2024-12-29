@@ -1,6 +1,6 @@
 {
-	"name": "dukascopy-node",
-	"version": "1.41.0",
+	"name": "dukascopy-node-jason",
+	"version": "1.41.0-1",
 	"description": "Node.js library for downloading historical market tick data for for Crypto, Stocks, ETFs, CFDs, Forex",
 	"main": "dist/index.js",
 	"module": "dist/esm/index.js",
@@ -10,7 +10,7 @@
 	],
 	"bin": {
 		"dukascopy-cli": "./dist/cli/index.js",
-		"dukascopy-node": "./dist/cli/index.js"
+		"dukascopy-node-jason": "./dist/cli/index.js"
 	},
 	"scripts": {
 		"build": "rm -rf dist && tsup-node src/index.ts src/cli/index.ts --format esm,cjs --dts --legacy-output",

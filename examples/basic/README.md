@@ -5,7 +5,7 @@ There are three basic output formats: `array`, `json` and `csv`
 ### [basic-array.js](https://github.com/Leo4815162342/dukascopy-node/blob/master/examples/basic/basic-array.js)
 
 ```javascript
-const { getHistoricalRates } = require('dukascopy-node');
+const { getHistoricalRates } = require('dukascopy-node-jason');
 
 (async () => {
   try {
@@ -49,7 +49,7 @@ Full example output: [basic-array.output.json](https://github.com/Leo4815162342/
 ### [basic-json.js](https://github.com/Leo4815162342/dukascopy-node/blob/master/examples/basic/basic-json.js)
 
 ```javascript
-const { getHistoricalRates } = require('dukascopy-node');
+const { getHistoricalRates } = require('dukascopy-node-jason');
 
 (async () => {
   try {
@@ -99,7 +99,7 @@ Full example output: [basic-json.output.json](https://github.com/Leo4815162342/d
 ### [basic-csv.js](https://github.com/Leo4815162342/dukascopy-node/blob/master/examples/basic/basic-csv.js)
 
 ```javascript
-const { getHistoricalRates } = require('dukascopy-node');
+const { getHistoricalRates } = require('dukascopy-node-jason');
 
 (async () => {
   try {

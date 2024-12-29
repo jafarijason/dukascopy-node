@@ -110,9 +110,8 @@ export async function run(argv: NodeJS.Process['argv']) {
 
       const fileName = customFileName
         ? `${customFileName}.${fileExtension}`
-        : `${instrument}-${timeframe}${
-            timeframe === 'tick' ? '' : '-' + priceType
-          }-${dateRangeStr}.${fileExtension}`;
+        : `${instrument}-${timeframe}${timeframe === 'tick' ? '' : '-' + priceType
+        }-${dateRangeStr}.${fileExtension}`;
       const folderPath = resolve(process.cwd(), dir);
       const filePath = resolve(folderPath, fileName);
 
@@ -199,16 +198,16 @@ export async function run(argv: NodeJS.Process['argv']) {
               processedBatch,
               dateFormat
                 ? timeStamp => {
-                    if (dateFormat === 'iso') {
-                      return new Date(timeStamp).toISOString();
-                    }
-
-                    if (timeZone) {
-                      return dayjs(timeStamp).tz(timeZone).format(dateFormat);
-                    }
-
-                    return dayjs(timeStamp).utc().format(dateFormat);
+                  if (dateFormat === 'iso') {
+                    return new Date(timeStamp).toISOString();
                   }
+
+                  if (timeZone) {
+                    return dayjs(timeStamp).tz(timeZone).format(dateFormat);
+                  }
+
+                  return dayjs(timeStamp).utc().format(dateFormat);
+                }
                 : undefined
             );
           }
@@ -227,8 +226,10 @@ export async function run(argv: NodeJS.Process['argv']) {
       );
       process.exit(1);
     }
-  } catch (err: unknown) {
+  } catch (err) {
+    console.log(err.message);
     const errorMsg = err instanceof Error ? err.message : JSON.stringify(err);
+    console.log(errorMsg);
     printErrors('\nSomething went wrong:', errorMsg);
     process.exit(1);
   }

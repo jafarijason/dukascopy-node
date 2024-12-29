@@ -1,4 +1,4 @@
-const { getHistoricalRates } = require('dukascopy-node');
+const { getHistoricalRates } = require('dukascopy-node-jason');
 
 (async () => {
   try {
