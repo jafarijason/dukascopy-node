@@ -43,3 +43,16 @@ export {
   CurrentRatesConfigJsonItem,
   CurrentRatesConfigJsonTickItem
 } from './getCurrentRates';
+
+import * as instrumentsGroup from './utils/instrument-meta-data/generated/instrument-groups.json'
+
+export const instrumentsGroupExp = [...instrumentsGroup]
+
+import * as instrumentsMetadata from './utils/instrument-meta-data/generated/instrument-meta-data.json'
+
+export const instrumentsMetadataExp: any = { ...instrumentsMetadata }
+
+Object.keys(instrumentsMetadataExp).forEach((key) => {
+  instrumentsMetadataExp[key]['key'] = key
+})
+
