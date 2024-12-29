@@ -1,7 +1,8 @@
-import fetch, { Response } from 'node-fetch';
+import { Response } from 'node-fetch';
 import { CacheManagerBase } from '../cache-manager';
 import { splitArrayInChunks, wait } from '../utils/general';
 import { BufferFetcherInput, BufferObject } from './types';
+import { fetchJason } from '../utils/fetchJason';
 
 export class BufferFetcher {
   batchSize: number;
@@ -163,7 +164,7 @@ export class BufferFetcher {
         const isLastRetry = retries === this.retryCount;
         let isCallSuccess = true;
         try {
-          response = await fetch(url);
+          response = await fetchJason(url);
         } catch (e) {
           isCallSuccess = false;
           errorMsg = e instanceof Error ? e.message : JSON.stringify(e);
@@ -187,7 +188,7 @@ export class BufferFetcher {
         }
       }
     } else {
-      response = await fetch(url);
+      response = await fetchJason(url);
     }
 
     return response.status === 200 ? response.buffer() : Buffer.from('', 'utf8');

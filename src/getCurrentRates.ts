@@ -1,4 +1,3 @@
-import fetch from 'node-fetch';
 import { DateInput } from './config';
 import { FormatType } from './config/format';
 import { InstrumentType } from './config/instruments';
@@ -7,6 +6,7 @@ import { PriceType } from './config/price-types';
 import { TimeframeType } from './config/timeframes';
 import { formatOutput } from './output-formatter';
 import { ArrayItem, ArrayTickItem, JsonItem, JsonItemTick } from './output-formatter/types';
+import { fetchJason } from './utils/fetchJason';
 
 export type CurrentRatesConfigBase = {
   instrument: InstrumentType;
@@ -136,7 +136,7 @@ export async function getCurrentRates({
     let fetchedRates: number[][] = [];
 
     try {
-      const rawResponse = await fetch(url, {
+      const rawResponse = await fetchJason(url, {
         headers: {
           Referer: 'https://freeserv.dukascopy.com/2.0'
         }
@@ -167,21 +167,21 @@ export async function getCurrentRates({
   let filteredRates = shouldSlice
     ? rates.slice((limit || 10) * -1)
     : rates.filter(function (item) {
-        let key = item[0];
+      let key = item[0];
 
-        const isWithinBounds = item[0] >= +fromDate && item[0] < +toDate;
+      const isWithinBounds = item[0] >= +fromDate && item[0] < +toDate;
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      //@ts-ignore
+      const isUnique = !this.has(key);
+      if (isWithinBounds && isUnique) {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         //@ts-ignore
-        const isUnique = !this.has(key);
-        if (isWithinBounds && isUnique) {
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          //@ts-ignore
-          this.add(key);
-          return true;
-        }
+        this.add(key);
+        return true;
+      }
 
-        return false;
-      }, new Set());
+      return false;
+    }, new Set());
 
   if (!volumes) {
     if (timeframe === 'tick') {

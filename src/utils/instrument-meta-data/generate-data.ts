@@ -2,11 +2,11 @@
 import path from 'path';
 import fs from 'fs';
 import { promisify } from 'util';
-import fetch from 'node-fetch';
 import { generateInstrumentGroupData } from './generate-group-data';
 import { generateMeta } from './generate-meta';
 import { generateInstrumentEnum } from './generate-instrument-enum';
 import { ActualStartDates, MetaDataResponse } from './generate-data.types';
+import { fetchJason } from '../fetchJason';
 const saveFile = promisify(fs.writeFile);
 
 const OUTPUT_FOLDER = path.resolve(__dirname, 'generated');
@@ -39,14 +39,14 @@ run();
 
 async function getActualStartDates(): Promise<ActualStartDates> {
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-  const rawResponse = await fetch(process.env.START_DATES_URL!);
+  const rawResponse = await fetchJason(process.env.START_DATES_URL!);
 
   const startDates = (await rawResponse.json()) as ActualStartDates;
   return startDates;
 }
 
 async function getRawMetaData(): Promise<MetaDataResponse> {
-  const rawResponse = await fetch(
+  const rawResponse = await fetchJason(
     'https://freeserv.dukascopy.com/2.0/index.php?path=common%2Finstruments',
     {
       headers: {

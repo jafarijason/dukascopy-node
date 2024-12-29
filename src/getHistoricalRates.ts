@@ -23,8 +23,13 @@ import { version } from '../package.json';
 
 import debug from 'debug';
 import os from 'os';
+import { proxyConfig } from './utils/proxyConfig';
+
+import _ from 'lodash';
 
 const DEBUG_NAMESPACE = 'dukascopy-node-jason';
+
+export const proxyObjToExport: any = {}
 
 export async function getHistoricalRates(config: ConfigArrayItem): Promise<ArrayItem[]>;
 export async function getHistoricalRates(config: ConfigArrayTickItem): Promise<ArrayTickItem[]>;
@@ -33,11 +38,21 @@ export async function getHistoricalRates(config: ConfigJsonTickItem): Promise<Js
 export async function getHistoricalRates(config: ConfigCsvItem): Promise<string>;
 export async function getHistoricalRates(config: Config): Promise<Output>;
 
-export async function getHistoricalRates(config: Config, proxyObj = {}): Promise<Output> {
+export async function getHistoricalRates(config: Config, proxyObj: any = {}): Promise<Output> {
   debug(`${DEBUG_NAMESPACE}:proxyObj`)(proxyObj);
   debug(`${DEBUG_NAMESPACE}:version`)(version);
   debug(`${DEBUG_NAMESPACE}:nodejs`)(process.version);
   debug(`${DEBUG_NAMESPACE}:os`)(`${os.type()}, ${os.release()} (${os.platform()})`);
+
+  Object.keys(proxyObj).forEach((key) => {
+    proxyObjToExport[key] = proxyObj[key]
+
+    if (key == 'proxyConfig' && _.isEmpty(proxyConfig)) {
+      Object.keys(proxyObj[key]).forEach(keyProxyConfig => {
+        proxyConfig[keyProxyConfig] = proxyObj[key][keyProxyConfig]
+      })
+    }
+  })
 
   const { input, isValid, validationErrors } = validateConfigNode(config);
 
