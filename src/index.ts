@@ -46,13 +46,16 @@ export {
 
 import * as instrumentsGroup from './utils/instrument-meta-data/generated/instrument-groups.json'
 
-export const instrumentsGroupExp = [...instrumentsGroup]
+// export const instrumentsGroupExp = [...instrumentsGroup]
+export const instrumentsGroupExp = () => {
+  return [...instrumentsGroup]
+}
 
-import * as instrumentsMetadata from './utils/instrument-meta-data/generated/instrument-meta-data.json'
+// import * as instrumentsMetadata from './utils/instrument-meta-data/generated/instrument-meta-data.json'
 
-export const instrumentsMetadataExp: any = { ...instrumentsMetadata }
+// export const instrumentsMetadataExp: any = { ...instrumentsMetadata }
 
-Object.keys(instrumentsMetadataExp).forEach((key) => {
-  instrumentsMetadataExp[key]['dukas_id'] = key
-})
+// Object.keys(instrumentsMetadataExp).forEach((key) => {
+//   instrumentsMetadataExp[key]['dukas_id'] = key
+// })
 
