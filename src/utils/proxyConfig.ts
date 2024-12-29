@@ -1,35 +1,35 @@
 export const proxyConfig: any = {
 
-    "proxy1": {
-        country: 'us',
-        host: "10.248.0.3",
-        port: 8111,
-        count: 1
-    },
-    "proxy2": {
-        country: 'us',
-        host: "10.248.0.3",
-        port: 8112,
-        count: 1
-    },
-    "proxy3": {
-        country: 'us',
-        host: "10.248.0.3",
-        port: 8113,
-        count: 1
-    },
-    "proxy4": {
-        country: 'us',
-        host: "10.248.0.3",
-        port: 8114,
-        count: 1
-    },
-    "proxy5": {
-        country: 'us',
-        host: "10.248.0.3",
-        port: 8115,
-        count: 1
-    },
+    // "proxy1": {
+    //     country: 'us',
+    //     host: "10.248.0.3",
+    //     port: 8111,
+    //     count: 1
+    // },
+    // "proxy2": {
+    //     country: 'us',
+    //     host: "10.248.0.3",
+    //     port: 8112,
+    //     count: 1
+    // },
+    // "proxy3": {
+    //     country: 'us',
+    //     host: "10.248.0.3",
+    //     port: 8113,
+    //     count: 1
+    // },
+    // "proxy4": {
+    //     country: 'us',
+    //     host: "10.248.0.3",
+    //     port: 8114,
+    //     count: 1
+    // },
+    // "proxy5": {
+    //     country: 'us',
+    //     host: "10.248.0.3",
+    //     port: 8115,
+    //     count: 1
+    // },
 
 };
 
