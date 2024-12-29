@@ -32,7 +32,7 @@ export { ArrayItem, ArrayTickItem, JsonItem, JsonItemTick, Output } from './outp
 
 export { RuleDate, RuleBoolean, RuleNumber, RuleString, RuleObject } from 'fastest-validator';
 
-export { getHistoricRates, getHistoricalRates } from './getHistoricalRates';
+export { getHistoricRates, getHistoricalRates, setProxyConfig } from './getHistoricalRates';
 
 export {
   getCurrentRates,
@@ -53,6 +53,6 @@ import * as instrumentsMetadata from './utils/instrument-meta-data/generated/ins
 export const instrumentsMetadataExp: any = { ...instrumentsMetadata }
 
 Object.keys(instrumentsMetadataExp).forEach((key) => {
-  instrumentsMetadataExp[key]['key'] = key
+  instrumentsMetadataExp[key]['dukas_id'] = key
 })
 

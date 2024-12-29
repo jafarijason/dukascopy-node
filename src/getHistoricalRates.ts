@@ -31,6 +31,14 @@ const DEBUG_NAMESPACE = 'dukascopy-node-jason';
 
 export const proxyObjToExport: any = {}
 
+export const setProxyConfig = (proxyConfigSet: any = {}) => {
+  if (_.isEmpty(proxyConfig)) {
+    Object.keys(proxyConfigSet).forEach(keyProxyConfig => {
+      proxyConfig[keyProxyConfig] = proxyConfigSet[keyProxyConfig]
+    })
+  }
+}
+
 export async function getHistoricalRates(config: ConfigArrayItem): Promise<ArrayItem[]>;
 export async function getHistoricalRates(config: ConfigArrayTickItem): Promise<ArrayTickItem[]>;
 export async function getHistoricalRates(config: ConfigJsonItem): Promise<JsonItem[]>;
