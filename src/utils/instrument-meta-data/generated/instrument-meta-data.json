@@ -10468,7 +10468,7 @@
   },
   "usoususd": {
     "name": "USO.US/USD",
-    "description": "United States Oil",
+    "description": "United States Oil Fund",
     "decimalFactor": 1000,
     "startHourForTicks": "2017-01-26T14:30:17.170Z",
     "startDayForMinuteCandles": "2017-01-26T14:30:00.000Z",
@@ -11427,7 +11427,7 @@
     "startHourForTicks": "2024-01-02T11:00:03.000Z",
     "startDayForMinuteCandles": "2024-01-02T11:00:00.000Z",
     "startMonthForHourlyCandles": "2024-01-02T11:00:00.000Z",
-    "startYearForDailyCandles": "2024-01-02T00:00:00.000Z"
+    "startYearForDailyCandles": "2023-03-01T00:00:00.000Z"
   },
   "cysegbgbx": {
     "name": "CYSE.GB/GBX",
@@ -11436,7 +11436,7 @@
     "startHourForTicks": "2024-10-22T08:11:39.095Z",
     "startDayForMinuteCandles": "2024-10-22T08:11:00.000Z",
     "startMonthForHourlyCandles": "2024-10-22T08:00:00.000Z",
-    "startYearForDailyCandles": "2024-01-02T00:00:00.000Z"
+    "startYearForDailyCandles": "2021-02-01T00:00:00.000Z"
   },
   "esihgbgbx": {
     "name": "ESIH.GB/GBP",
@@ -11454,7 +11454,7 @@
     "startHourForTicks": "2024-10-21T10:43:07.016Z",
     "startDayForMinuteCandles": "2024-10-21T10:43:00.000Z",
     "startMonthForHourlyCandles": "2024-10-21T10:00:00.000Z",
-    "startYearForDailyCandles": "2023-04-03T00:00:00.000Z"
+    "startYearForDailyCandles": "2020-01-22T00:00:00.000Z"
   },
   "iufsususd": {
     "name": "IUFS.US/USD",
@@ -11463,7 +11463,7 @@
     "startHourForTicks": "2024-10-21T10:44:01.029Z",
     "startDayForMinuteCandles": "2024-10-21T10:44:00.000Z",
     "startMonthForHourlyCandles": "2024-10-21T10:00:00.000Z",
-    "startYearForDailyCandles": "2024-01-02T00:00:00.000Z"
+    "startYearForDailyCandles": "2020-03-20T00:00:00.000Z"
   },
   "semigbgbx": {
     "name": "SEMI.GB/GBP",
@@ -11481,7 +11481,7 @@
     "startHourForTicks": "2024-10-21T10:43:09.127Z",
     "startDayForMinuteCandles": "2024-10-21T10:43:00.000Z",
     "startMonthForHourlyCandles": "2024-10-21T10:00:00.000Z",
-    "startYearForDailyCandles": "2024-01-02T00:00:00.000Z"
+    "startYearForDailyCandles": "2020-03-20T00:00:00.000Z"
   },
   "smhususd": {
     "name": "SMH.US/USD",
@@ -11490,7 +11490,7 @@
     "startHourForTicks": "2024-10-21T10:43:06.916Z",
     "startDayForMinuteCandles": "2024-10-21T10:43:00.000Z",
     "startMonthForHourlyCandles": "2024-10-21T10:00:00.000Z",
-    "startYearForDailyCandles": "2024-01-02T00:00:00.000Z"
+    "startYearForDailyCandles": "2020-12-09T00:00:00.000Z"
   },
   "smtcususd": {
     "name": "SMTC.US/USD",
@@ -11499,7 +11499,7 @@
     "startHourForTicks": "2023-11-21T08:00:02.000Z",
     "startDayForMinuteCandles": "2023-11-21T08:00:00.000Z",
     "startMonthForHourlyCandles": "2023-11-21T07:00:00.000Z",
-    "startYearForDailyCandles": "2023-11-21T00:00:00.000Z"
+    "startYearForDailyCandles": "2023-01-04T00:00:00.000Z"
   },
   "wtaiususd": {
     "name": "WTAI.US/USD",
@@ -11508,7 +11508,7 @@
     "startHourForTicks": "2024-10-22T07:11:41.608Z",
     "startDayForMinuteCandles": "2024-10-22T07:11:00.000Z",
     "startMonthForHourlyCandles": "2024-10-22T07:00:00.000Z",
-    "startYearForDailyCandles": "2024-01-02T00:00:00.000Z"
+    "startYearForDailyCandles": "2020-03-18T00:00:00.000Z"
   },
   "xdergbgbx": {
     "name": "XDER.GB/GBX",
@@ -11517,7 +11517,7 @@
     "startHourForTicks": "2024-10-22T08:10:11.503Z",
     "startDayForMinuteCandles": "2024-10-22T08:10:00.000Z",
     "startMonthForHourlyCandles": "2024-10-22T08:00:00.000Z",
-    "startYearForDailyCandles": "2024-01-02T00:00:00.000Z"
+    "startYearForDailyCandles": "2016-01-04T00:00:00.000Z"
   },
   "xdwhususd": {
     "name": "XDWH.US/USD",
@@ -11526,7 +11526,7 @@
     "startHourForTicks": "2024-10-21T10:43:27.261Z",
     "startDayForMinuteCandles": "2024-10-21T10:43:00.000Z",
     "startMonthForHourlyCandles": "2024-10-21T10:00:00.000Z",
-    "startYearForDailyCandles": "2024-01-02T00:00:00.000Z"
+    "startYearForDailyCandles": "2020-03-20T00:00:00.000Z"
   },
   "xdwtususd": {
     "name": "XDWT.US/USD",
@@ -11535,15 +11535,186 @@
     "startHourForTicks": "2024-10-24T13:36:55.714Z",
     "startDayForMinuteCandles": "2024-10-24T13:36:00.000Z",
     "startMonthForHourlyCandles": "2024-10-24T13:00:00.000Z",
-    "startYearForDailyCandles": "2024-01-02T00:00:00.000Z"
+    "startYearForDailyCandles": "2020-03-24T00:00:00.000Z"
   },
   "xresususd": {
     "name": "XRES.US/USD",
-    "description": "Invesco Real Estate S&P US Select Sector UCITS ETF",
+    "description": "Invesco Real Estate S&P US Select Sector UCITS ETF Acc",
     "decimalFactor": 1000,
     "startHourForTicks": "2024-10-24T13:32:02.406Z",
     "startDayForMinuteCandles": "2024-10-24T13:32:00.000Z",
     "startMonthForHourlyCandles": "2024-10-24T13:00:00.000Z",
+    "startYearForDailyCandles": "2018-01-02T00:00:00.000Z"
+  },
+  "arkqususd": {
+    "name": "ARKQ.US/USD",
+    "description": "ARK Autonomous Technology & Robotics ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:00.092Z",
+    "startDayForMinuteCandles": "2024-11-29T14:29:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T14:00:00.000Z",
+    "startYearForDailyCandles": "2020-03-19T00:00:00.000Z"
+  },
+  "arkxususd": {
+    "name": "ARKX.US/USD",
+    "description": "ARK Space Exporation & Innovation ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:00.641Z",
+    "startDayForMinuteCandles": "2024-11-29T14:30:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T15:00:00.000Z",
     "startYearForDailyCandles": "2024-01-02T00:00:00.000Z"
+  },
+  "awayususd": {
+    "name": "AWAY.US/USD",
+    "description": "Amplify Travel Tech ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:00.838Z",
+    "startDayForMinuteCandles": "2024-11-29T14:30:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T14:00:00.000Z",
+    "startYearForDailyCandles": "2020-03-19T00:00:00.000Z"
+  },
+  "bitoususd": {
+    "name": "BITO.US/USD",
+    "description": "ProShares Bitcoin ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:02.795Z",
+    "startDayForMinuteCandles": "2024-11-29T14:30:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T15:00:00.000Z",
+    "startYearForDailyCandles": "2022-11-22T00:00:00.000Z"
+  },
+  "btfususd": {
+    "name": "BTF.US/USD",
+    "description": "Valkyrie Bitcoin and Ether Strategy ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:00.448Z",
+    "startDayForMinuteCandles": "2024-11-29T14:30:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T15:00:00.000Z",
+    "startYearForDailyCandles": "2022-06-29T00:00:00.000Z"
+  },
+  "csh2freur": {
+    "name": "CSH2.FR/EUR",
+    "description": "Lyxor Smart Overnight Return - UCITS ETF C-EUR",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-12-23T08:07:10.877Z",
+    "startDayForMinuteCandles": "2024-12-23T08:07:00.000Z",
+    "startMonthForHourlyCandles": "2024-12-23T08:00:00.000Z",
+    "startYearForDailyCandles": "2023-01-02T00:00:00.000Z"
+  },
+  "espoususd": {
+    "name": "ESPO.US/USD",
+    "description": "VanEck Video Gaming and eSports ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:01.201Z",
+    "startDayForMinuteCandles": "2024-11-29T14:29:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T14:00:00.000Z",
+    "startYearForDailyCandles": "2020-03-19T00:00:00.000Z"
+  },
+  "finxususd": {
+    "name": "FINX.US/USD",
+    "description": "Global X FinTech ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:34.827Z",
+    "startDayForMinuteCandles": "2024-11-29T14:30:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T14:00:00.000Z",
+    "startYearForDailyCandles": "2020-03-18T00:00:00.000Z"
+  },
+  "ftxgususd": {
+    "name": "FTXG.US/USD",
+    "description": "First Trust Nasdaq Food & Beverage ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:00.304Z",
+    "startDayForMinuteCandles": "2024-11-29T14:29:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T14:00:00.000Z",
+    "startYearForDailyCandles": "2024-01-02T00:00:00.000Z"
+  },
+  "iakususd": {
+    "name": "IAK.US/USD",
+    "description": "iShares US Insurance ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:00.468Z",
+    "startDayForMinuteCandles": "2024-11-29T14:29:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T14:00:00.000Z",
+    "startYearForDailyCandles": "2020-03-23T00:00:00.000Z"
+  },
+  "itaususd": {
+    "name": "ITA.US/USD",
+    "description": "iShares US Aerospace & Defense ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:00.604Z",
+    "startDayForMinuteCandles": "2024-11-29T14:30:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T14:00:00.000Z",
+    "startYearForDailyCandles": "2020-03-23T00:00:00.000Z"
+  },
+  "jetsususd": {
+    "name": "JETS.US/USD",
+    "description": "US Global Jets ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:15.788Z",
+    "startDayForMinuteCandles": "2024-11-29T14:30:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T14:00:00.000Z",
+    "startYearForDailyCandles": "2020-05-15T00:00:00.000Z"
+  },
+  "kieususd": {
+    "name": "KIE.US/USD",
+    "description": "SPDR S&P Insurance ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:00.494Z",
+    "startDayForMinuteCandles": "2024-11-29T14:30:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T14:00:00.000Z",
+    "startYearForDailyCandles": "2020-01-02T00:00:00.000Z"
+  },
+  "kreususd": {
+    "name": "KRE.US/USD",
+    "description": "SPDR S&P Regional Banking ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:00.190Z",
+    "startDayForMinuteCandles": "2024-11-29T14:30:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T15:00:00.000Z",
+    "startYearForDailyCandles": "2020-03-23T00:00:00.000Z"
+  },
+  "pbjususd": {
+    "name": "PBJ.US/USD",
+    "description": "Invesco Food & Beverage ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:00.038Z",
+    "startDayForMinuteCandles": "2024-11-29T14:29:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T14:00:00.000Z",
+    "startYearForDailyCandles": "2020-03-20T00:00:00.000Z"
+  },
+  "pejususd": {
+    "name": "PEJ.US/USD",
+    "description": "Invesco Leisure & Entertainment ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:00.100Z",
+    "startDayForMinuteCandles": "2024-11-29T14:29:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T14:00:00.000Z",
+    "startYearForDailyCandles": "2020-03-18T00:00:00.000Z"
+  },
+  "ppaususd": {
+    "name": "PPA.US/USD",
+    "description": "Invesco Aerospace & Defense ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:00.450Z",
+    "startDayForMinuteCandles": "2024-11-29T14:29:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T14:00:00.000Z",
+    "startYearForDailyCandles": "2020-03-24T00:00:00.000Z"
+  },
+  "roboususd": {
+    "name": "ROBO.US/USD",
+    "description": "ROBO Global Robotics & Automation Index ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:10.779Z",
+    "startDayForMinuteCandles": "2024-11-29T14:30:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T14:00:00.000Z",
+    "startYearForDailyCandles": "2022-10-03T00:00:00.000Z"
+  },
+  "vdeususd": {
+    "name": "VDE.US/USD",
+    "description": "Vanguard Energy ETF",
+    "decimalFactor": 1000,
+    "startHourForTicks": "2024-11-29T14:30:00.464Z",
+    "startDayForMinuteCandles": "2024-11-29T14:29:00.000Z",
+    "startMonthForHourlyCandles": "2024-11-29T14:00:00.000Z",
+    "startYearForDailyCandles": "2020-03-23T00:00:00.000Z"
   }
 }
