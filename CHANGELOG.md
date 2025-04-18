@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.43.0](https://github.com/Leo4815162342/dukascopy-node/compare/v1.38.0...v1.43.0) (2025-04-18)
+
+
+### Features
+
+* more sensible error codes ([#189](https://github.com/Leo4815162342/dukascopy-node/issues/189)) ([d0fe496](https://github.com/Leo4815162342/dukascopy-node/commit/d0fe49646609d6a68bc62c1672b44fff7bef3957))
+* new instruments jan 2025 ([#203](https://github.com/Leo4815162342/dukascopy-node/issues/203)) ([251ad85](https://github.com/Leo4815162342/dukascopy-node/commit/251ad85df215c5085532bd420eee955cca184f88))
+* new instruments Jun 2024 ([#177](https://github.com/Leo4815162342/dukascopy-node/issues/177)) ([6855c03](https://github.com/Leo4815162342/dukascopy-node/commit/6855c032032bd21950cab616fd3293d995f2ef38))
+* new instruments Nov 2024 ([#199](https://github.com/Leo4815162342/dukascopy-node/issues/199)) ([44d7ca4](https://github.com/Leo4815162342/dukascopy-node/commit/44d7ca42e59747e76fdd75fe5608211bc0e090ab))
+
+
+### Bug Fixes
+
+* custom decimal factor for some instruments ([#181](https://github.com/Leo4815162342/dukascopy-node/issues/181)) ([67c6903](https://github.com/Leo4815162342/dukascopy-node/commit/67c6903795f9d10b97ac4a43aa75b151fc03b1b0))
+* restore metadata ([#182](https://github.com/Leo4815162342/dukascopy-node/issues/182)) ([ca64a92](https://github.com/Leo4815162342/dukascopy-node/commit/ca64a92a5b120896d744ebe481618289ab43ca14))
+* start dates for some intstruments ([#206](https://github.com/Leo4815162342/dukascopy-node/issues/206)) ([c745c78](https://github.com/Leo4815162342/dukascopy-node/commit/c745c7849c628e40cbce6366eedb74939fd2c679))
+
 ### [1.42.1](https://github.com/Leo4815162342/dukascopy-node/compare/v1.42.0...v1.42.1) (2025-03-02)
 
 
