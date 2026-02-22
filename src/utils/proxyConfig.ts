@@ -64,10 +64,12 @@ export const getProxyFromLoop = () => {
     }
 
 
-    const proxyUrl = `http://:@${proxyObj.host}:${proxyObj.port}`;
+    let proxyUrl = `http://:@${proxyObj.host}:${proxyObj.port}`;
+    if (proxyObj?.userName && proxyObj?.password) {
+        proxyUrl = `http://${proxyObj?.userName}:${proxyObj?.password}@${proxyObj.host}:${proxyObj.port}`;
+    }
 
     return proxyUrl
-
 
 }
 
