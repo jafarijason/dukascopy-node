@@ -184,6 +184,7 @@ export class BufferFetcher {
           await wait(this.pauseBetweenRetriesMs);
         }
         if (isLastRetry && !isTrySuccess && this.failAfterRetryCount) {
+          console.log(`Not able to load url ${url}`);
           throw Error(errorMsg || 'Unknown error');
         }
       }
